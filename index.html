@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fairy Beads ✨ | Beads Jewelry Aesthetic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Variabel Warna */
+        :root {
+            --color-soft-pink: #FFC0CB; /* Pink */
+            --color-dusty-rose: #E0BBE4; /* Dusty Rose/Lilac Muda */
+            --color-baby-pink: #FEEAFA; /* Pink Sangat Muda */
+            --color-white: #FFFFFF;
+            --color-rose-gold: #B76E79; /* Rose Gold/Coklat Kemerahan */
+            --color-text-dark: #333333;
+            --color-text-light: #555555;
+            --color-accent: #FF69B4; /* Hot Pink untuk Highlight */
+        }
+
+        /* Reset dan Typography */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-baby-pink);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, .logo-text {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-text-dark);
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--color-text-dark);
+        }
+
+        /* Header dan Navigasi */
+        header {
+            background-color: var(--color-white);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-text {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--color-accent);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text span {
+            margin-left: 5px;
+            font-size: 1.2em;
+        }
+
+        nav a {
+            margin-left: 25px;
+            font-weight: 600;
+            padding: 5px 0;
+            transition: color 0.3s, border-bottom 0.3s;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--color-rose-gold);
+        }
+
+        nav a.active::after, nav a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-rose-gold);
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        nav a.active::after, nav a:hover::after {
+            transform: scaleX(1);
+        }
+        
+        .nav-icons span {
+            font-size: 1.4em;
+            margin-left: 20px;
+            cursor: pointer;
+            color: var(--color-text-dark);
+            transition: color 0.3s;
+        }
+
+        .nav-icons span:hover {
+            color: var(--color-accent);
+        }
+
+        /* Konten Utama */
+        .content-section {
+            padding: 40px 5%;
+            min-height: 70vh;
+            display: none;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+
+        /* === HOME PAGE === */
+        #home {
+            padding-top: 0;
+        }
+
+        .hero-banner {
+            background-image: url('images/bg.jpg'); /* Pastikan file 'bg.jpg' ada di folder 'images/' */
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+            padding: 80px 5%;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* OVERLAY PINK/PUTIH AGAR TEKS MUDAH DIBACA */
+            background: linear-gradient(135deg, rgba(255, 192, 203, 0.7) 0%, rgba(224, 187, 228, 0.7) 100%);
+            border-radius: 15px;
+        }
+
+.hero-banner h1, .hero-banner p {
+    color: var(--color-text-dark); /* Ubah warna teks menjadi gelap agar kontras */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+/* END GANTI BLOK */
+
+        .hero-content {
+            z-index: 1;
+        }
+
+        .hero-banner h1 {
+            color: var(--color-white);
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-banner p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-weight: 300;
+            color: var(--color-white);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-button {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            background-color: #ff8cba; /* Lighten pink */
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: var(--color-rose-gold);
+        }
+
+        /* Kategori Highlight */
+        .category-highlight {
+            display: flex;
+            justify-content: center; /* biar tengah */
+            flex-wrap: wrap; /* biar bisa turun ke bawah */
+            gap: 20px; /* jarak antar kartu, lebih rapi daripada pakai margin */
+            max-width: 800px; /* batas lebar biar tampil 2x2 */
+            margin: 0 auto 40px auto; /* posisi di tengah + jarak bawah */
+        }
+
+
+        .category-card {
+            flex:  0 0 calc(50% - 20px); /* otomatis dua per baris */
+            background-color: var(--color-white);
+            border-radius: 10px;
+            padding: 20px; /* Pertahankan padding Anda */;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--color-soft-pink);
+        }
+
+        .category-card h4 {
+            margin: 0;
+            color: var(--color-text-light);
+            font-weight: 600;
+        }
+
+        /* Testimoni */
+        .testimonial-section {
+            background-color: var(--color-white);
+            padding: 40px 5%;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .testimonials-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .testimonial-card {
+            width: 30%;
+            padding: 20px;
+            background-color: var(--color-baby-pink);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin: 10px 0;
+            text-align: center;
+        }
+        
+        .testimonial-card p {
+            font-style: italic;
+            color: var(--color-text-light);
+            margin-bottom: 10px;
+        }
+
+        .testimonial-card strong {
+            display: block;
+            margin-top: 10px;
+            color: var(--color-accent);
+        }
+
+        /* === SHOP PAGE === */
+        #shop {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 20%;
+            padding-right: 20px;
+        }
+
+        .sidebar h3 {
+            border-bottom: 2px solid var(--color-soft-pink);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: var(--color-rose-gold);
+        }
+
+        .filter-group {
+            margin-bottom: 25px;
+        }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .filter-group input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            height: 5px;
+            background: var(--color-soft-pink);
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .filter-group button {
+            background-color: var(--color-rose-gold);
+            color: var(--color-white);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .filter-group button:hover {
+            background-color: var(--color-accent);
+        }
+        
+        .category-filter label {
+            display: block;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .product-grid {
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: var(--color-white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h4 {
+            margin: 10px 0 5px 0;
+            color: var(--color-rose-gold);
+        }
+
+        .product-info p {
+            color: var(--color-accent);
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .add-to-cart-btn {
+            background-color: var(--color-soft-pink);
+            color: var(--color-text-dark);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s, color 0.3s;
+            width: 90%;
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: var(--color-rose-gold);
+            color: var(--color-white);
+        }
+
+        /* === DETAIL PRODUCT PAGE === */
+        #product-detail {
+            display: flex;
+            gap: 40px;
+            background-color: var(--color-white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .detail-image-gallery {
+            width: 50%;
+            position: relative;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product-details {
+            width: 50%;
+        }
+
+        .product-details h2 {
+            font-size: 2.2em;
+            color: var(--color-accent);
+        }
+        
+        .product-details .price {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--color-rose-gold);
+            margin-bottom: 20px;
+        }
+
+        .product-details p {
+            color: var(--color-text-light);
+            margin-bottom: 25px;
+        }
+
+        .options div {
+            margin-bottom: 15px;
+        }
+
+        .options label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .options select, .options input[type="number"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid var(--color-soft-pink);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .action-buttons .cta-button {
+            flex: 2;
+            text-align: center;
+        }
+
+        .wishlist-btn {
+            flex: 1;
+            background-color: var(--color-baby-pink);
+            color: var(--color-text-dark);
+            border: 1px solid var(--color-soft-pink);
+            padding: 12px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .wishlist-btn:hover {
+            background-color: var(--color-soft-pink);
+            border-color: var(--color-rose-gold);
+        }
+
+        .review-section h3 {
+            margin-top: 40px;
+            border-bottom: 1px solid var(--color-baby-pink);
+            padding-bottom: 10px;
+        }
+        
+        /* === ABOUT US PAGE === */
+        #about {
+            background-color: var(--color-white);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .about-us-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-us-content h2 {
+            color: var(--color-accent);
+            margin-bottom: 15px;
+        }
+
+        .about-us-content p {
+            font-size: 1.1em;
+            color: var(--color-text-light);
+            margin-bottom: 30px;
+        }
+
+        .vision-mission-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .vm-card {
+            width: 30%;
+            padding: 20px;
+            background-color: var(--color-baby-pink);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .vm-card h4 {
+            color: var(--color-rose-gold);
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+        
+        .vm-card p {
+            font-size: 0.95em;
+        }
+        
+        .team-photo {
+            margin-top: 40px;
+        }
+
+        .team-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--color-soft-pink);
+            margin: 0 15px;
+        }
+        
+        /* === CONTACT PAGE === */
+        #contact {
+            display: flex;
+            gap: 40px;
+            background-color: var(--color-white);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-form, .contact-info {
+            width: 50%;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid var(--color-soft-pink);
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            border: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff8cba;
+        }
+
+        .contact-info div {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: var(--color-baby-pink);
+            border-radius: 8px;
+        }
+
+        .contact-info h3 {
+            color: var(--color-rose-gold);
+            margin-top: 0;
+            border-bottom: 1px solid var(--color-soft-pink);
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .social-media a {
+            margin-right: 15px;
+            font-size: 1.8em;
+            color: var(--color-accent);
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: var(--color-rose-gold);
+        }
+        
+        /* === CART/CHECKOUT PAGE === */
+        #cart, #checkout {
+            background-color: var(--color-white);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .cart-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px dashed var(--color-soft-pink);
+            padding: 15px 0;
+            margin-bottom: 15px;
+        }
+
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .item-details {
+            flex-grow: 1;
+        }
+
+        .item-details h4 {
+            margin: 0;
+            color: var(--color-rose-gold);
+        }
+
+        .item-details p {
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+            color: var(--color-text-light);
+        }
+        
+        .item-quantity input {
+            width: 50px;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid var(--color-soft-pink);
+            border-radius: 5px;
+        }
+
+        .item-price {
+            width: 100px;
+            font-weight: 700;
+            color: var(--color-accent);
+            text-align: right;
+        }
+
+        .remove-btn {
+            background: none;
+            border: none;
+            color: #FF0000;
+            cursor: pointer;
+            margin-left: 20px;
+            font-size: 1.2em;
+        }
+
+        .cart-summary {
+            text-align: right;
+            border-top: 2px solid var(--color-rose-gold);
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        .cart-summary p {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .cart-summary .total {
+            font-size: 1.5em;
+            color: var(--color-accent);
+        }
+        
+        .checkout-button {
+            margin-top: 20px;
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: none;
+        }
+
+        .checkout-button:hover {
+            background-color: #ff8cba;
+        }
+        
+        /* CHECKOUT */
+        .checkout-container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .checkout-form {
+            width: 60%;
+        }
+
+        .checkout-form h3 {
+            color: var(--color-rose-gold);
+            border-bottom: 1px solid var(--color-soft-pink);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .checkout-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        
+        .checkout-form input, .checkout-form select, .checkout-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid var(--color-soft-pink);
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .checkout-summary {
+            width: 40%;
+            background-color: var(--color-baby-pink);
+            padding: 20px;
+            border-radius: 10px;
+            height: fit-content;
+        }
+        
+        .checkout-summary h4 {
+            color: var(--color-accent);
+            border-bottom: 1px solid var(--color-soft-pink);
+            padding-bottom: 10px;
+        }
+        
+        .payment-options div {
+            margin-bottom: 15px;
+        }
+
+        .payment-options label {
+            font-weight: normal;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-text-dark);
+            color: var(--color-white);
+            padding: 40px 5%;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            width: 22%;
+        }
+
+        .footer-section h4 {
+            color: var(--color-soft-pink);
+            margin-bottom: 15px;
+        }
+
+        .footer-section a {
+            color: var(--color-baby-pink);
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--color-accent);
+        }
+
+        .newsletter input {
+            padding: 8px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            width: 70%;
+        }
+
+        .newsletter button {
+            padding: 8px;
+            border: none;
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85em;
+        }
+        
+        /* Utility */
+        .hidden {
+            display: none !important;
+        }
+
+        /* --- CUSTOM TOAST NOTIFICATION --- */
+        .fairy-toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--color-white);
+            color: var(--color-text-dark);
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+            opacity: 0;
+            transform: translateY(100%);
+            border: 1px solid var(--color-soft-pink);
+            font-weight: 600;
+        }
+
+        .fairy-toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .toast-icon {
+            font-size: 1.5em;
+            color: var(--color-accent);
+        }
+        /* Pastikan .hidden ada di CSS Anda */
+        .hidden {
+            display: none !important;
+        }
+
+        /* --- ORDER CONFIRMATION MODAL (STRUK) --- */
+        .confirmation-modal {
+            display: none; /* Default state */
+            position: fixed;
+            z-index: 10001; /* Di atas semuanya */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4); /* Overlay gelap */
+            padding-top: 60px;
+        }
+
+        .confirmation-modal.show {
+            display: block;
+        }
+
+        .modal-content {
+            background-color: var(--color-white);
+            margin: 5% auto; /* Tengah vertikal dan horizontal */
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%; /* Lebar modal */
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            border-top: 8px solid var(--color-soft-pink);
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .close-btn {
+            color: var(--color-text-light);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: var(--color-accent);
+        }
+
+        .conf-header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed var(--color-soft-pink);
+        }
+
+        .conf-section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-left: 3px solid var(--color-dusty-rose);
+        }
+
+        .conf-section h4 {
+            margin-top: 0;
+            color: var(--color-rose-gold);
+            border-bottom: 1px dotted var(--color-baby-pink);
+            padding-bottom: 5px;
+        }
+
+        .conf-total-summary {
+            background-color: var(--color-baby-pink);
+            padding: 15px;
+            border-radius: 8px;
+            border: none;
+            text-align: right;
+        }
+
+        .conf-total-summary p {
+            margin: 5px 0;
+            font-weight: 400;
+        }
+
+        .conf-total-summary .total {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: var(--color-accent);
+            border-top: 1px solid var(--color-soft-pink);
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .closing-note {
+            text-align: center;
+            font-style: italic;
+            color: var(--color-text-light);
+            margin-top: 30px;
+        }
+        /* --- AKHIR ORDER CONFIRMATION MODAL --- */
+
+        /* ======================================= */
+/* === RESPONSIVE DESIGN (Media Queries) === */
+/* ======================================= */
+
+@media (max-width: 768px) {
+    /* ------------------------------------- */
+    /* 1. HEADER & NAVIGASI */
+    /* ------------------------------------- */
+    header {
+        flex-direction: column;
+        padding: 10px 5%;
+        position: static; /* Lepaskan sticky agar tidak menutupi konten saat layar kecil */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Tumpuk link secara vertikal */
+        width: 100%;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+        padding: 5px;
+    }
+
+    .nav-icons {
+        margin-top: 10px;
+    }
+    
+    .logo-text {
+        margin-bottom: 5px;
+    }
+
+    /* ------------------------------------- */
+    /* 2. HOME PAGE LAYOUT */
+    /* ------------------------------------- */
+    
+    .hero-banner {
+        min-height: 300px;
+    }
+
+    .hero-banner h1 {
+        font-size: 2em;
+    }
+
+    .hero-banner p {
+        font-size: 1em;
+    }
+
+    /* Kategori Highlight: Paksa 1 kolom */
+    .category-highlight {
+        flex-direction: column;
+        max-width: 400px; /* Batasi lebar agar tidak terlalu besar di HP */
+    }
+
+    .category-card {
+        flex: 1 1 100%; /* Ambil 100% lebar */
+    }
+
+    /* Testimoni: Tumpuk menjadi 1 kolom */
+    .testimonials-container {
+        flex-direction: column;
+    }
+    
+    .testimonial-card {
+        width: 90%; /* Ambil lebar penuh */
+        margin: 10px auto;
+    }
+
+    /* ------------------------------------- */
+    /* 3. SHOP PAGE & SIDEBAR */
+    /* ------------------------------------- */
+    #shop {
+        flex-direction: column; /* Tumpuk Sidebar di atas Grid Produk */
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar ambil lebar penuh */
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Product Grid: Ganti ke 1 atau 2 kolom */
+    .product-grid {
+        width: 100%; /* Grid ambil lebar penuh */
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom di HP lebih baik daripada 3 */
+        gap: 15px;
+    }
+
+    /* ------------------------------------- */
+    /* 4. DETAIL PRODUCT */
+    /* ------------------------------------- */
+    #product-detail {
+        flex-direction: column; /* Tumpuk gambar dan detail */
+    }
+    
+    .detail-image-gallery, .product-details {
+        width: 100%; /* Ambil lebar penuh */
+    }
+
+    .main-image {
+        height: 350px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .action-buttons .cta-button, .wishlist-btn {
+        flex: auto;
+        width: 100%;
+    }
+
+    /* ------------------------------------- */
+    /* 5. CONTACT & CHECKOUT */
+    /* ------------------------------------- */
+    #contact, .checkout-container {
+        flex-direction: column; /* Tumpuk formulir dan info */
+    }
+    
+    .contact-form, .contact-info, .checkout-form, .checkout-summary {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .checkout-summary {
+        order: -1; /* Pindahkan ringkasan ke atas formulir */
+    }
+
+    /* ------------------------------------- */
+    /* 6. FOOTER */
+    /* ------------------------------------- */
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-text" onclick="navigateTo('home')">
+            Fairy Beads <span style="font-family: Arial, sans-serif;">✨</span>
+        </div>
+        <nav>
+            <a href="#" class="nav-link active" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="shop">Shop</a>
+            <a href="#" class="nav-link" data-page="about">Tentang Kami</a>
+            <a href="#" class="nav-link" data-page="contact">Kontak</a>
+        </nav>
+        <div class="nav-icons">
+            <span class="search-icon" style="display: none;"><i class="fas fa-search"></i></span>
+            <span class="cart-icon" onclick="navigateTo('cart')"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</span>
+        </div>
+    </header>
+
+    <div id="home" class="content-section active">
+        <div class="hero-banner">
+            <div class="hero-content" style="z-index: 2;"> <h1>Temukan Beads Jewelry Impianmu</h1>
+                <p>Dengan Sentuhan Fairy Beads yang Lucu, Gemas, dan Aesthetic.</p>
+                <a href="#" class="cta-button" onclick="navigateTo('shop')">Belanja Sekarang</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">✨ Kategori Produk Unggulan ✨</h2>
+        <div class="category-highlight">
+            <div class="category-card" onclick="applyFilter('Necklace')">
+                <img src="nc1.jpg" alt="Necklace">
+                <h4>Necklaces</h4>
+            </div>
+            <div class="category-card" onclick="applyFilter('Bracelet')">
+                <img src="b1.jpg" alt="Bracelet">
+                <h4>Bracelets</h4>
+            </div>
+            <div class="category-card" onclick="applyFilter('Phone Strap')">
+                <img src="ps1.jpg" alt="Phone Strap">
+                <h4>Phone Strap</h4>
+            </div>
+            <div class="category-card" onclick="applyFilter('Ring')">
+                <img src="ring1.jpg" alt="Ring">
+                <h4>Rings</h4>
+            </div>
+        </div>
+
+        <div class="testimonial-section">
+        <h2 class="section-title">💖 Apa Kata Pelanggan Kami? 💖</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <p>"Gelang dan cincinnya gemas banget! Kualitas premium, pink-nya aesthetic khas anak muda. Suka!"</p>
+                    <strong>Arabella</strong>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Necklace-nya lucu dan harganya terjangkau. Packaging rapi dan aman. Sangat direkomendasikan!"</p>
+                    <strong>Freya</strong>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Cincin dan phone strap-nya bener-bener aesthetic dan girly. Desainnya unik, cocok untuk OOTD."</p>
+                    <strong>Luna</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="shop" class="content-section">
+        <div class="sidebar">
+            <h3>Filter Produk</h3>
+            <div class="filter-group category-filter">
+                <label>Kategori</label>
+                <label><input type="checkbox" data-filter="all" checked> Semua</label>
+                <label><input type="checkbox" data-filter="Necklace"> Necklace</label>
+                <label><input type="checkbox" data-filter="Bracelet"> Bracelet</label>
+                <label><input type="checkbox" data-filter="Phone Strap"> Phone Strap</label>
+                <label><input type="checkbox" data-filter="Ring"> Ring</label>
+            </div>
+
+            <div class="filter-group">
+                <label for="price-range">Harga Maks. (<span id="price-value">70.000</span>)</label>
+                <input type="range" id="price-range" min="20000" max="70000" step="10000" value="70000">
+            </div>
+
+            <div class="filter-group">
+                <button onclick="applyFilters()">Terapkan Filter</button>
+            </div>
+        </div>
+        
+        <div class="product-grid" id="product-grid">
+            </div>
+    </div>
+    
+    <div id="product-detail" class="content-section hidden">
+        </div>
+    
+    <div id="about" class="content-section">
+        <div class="about-us-content">
+            <h2>🌸 Cerita Kami 🌸</h2>
+            <p>Fairy Beads lahir dari kecintaan kami terhadap beads jewelry yang aesthetic dan feminine. Dimulai dari hobi membuat aksesori manik-manik untuk diri sendiri, kini Fairy Beads telah berkembang menjadi brand yang dipercaya ribuan perempuan Indonesia.</p>
+            <p>Setiap produk manik-manik dirancang dengan penuh cinta dan perhatian terhadap detail. Kami memilih manik-manik berkualitas tinggi dengan warna-warna soft pink, pastel, dan kombinasi yang menciptakan kesan lucu, gemas, aesthetic, clean, dan mudah digunakan.</p>
+
+            <h2 style="margin-top: 50px;">🌟 Visi & Misi 🌟</h2>
+            <div class="vision-mission-grid">
+                <div class="vm-card">
+                    <h4>Visi Kami</h4>
+                    <p>Menjadi brand beads jewelry pilihan utama perempuan Indonesia yang aesthetic dan percaya diri.</p>
+                </div>
+                <div class="vm-card">
+                    <h4>Misi Kami</h4>
+                    <p>Menemani perempuan tampil percaya diri dengan memakai beads jewelry yang gemas, lucu, serta harga yang terjangkau.</p>
+                </div>
+                <div class="vm-card">
+                    <h4>Nilai Kami</h4>
+                    <p>Kualitas, kreativitas, dan kepuasan pelanggan adalah prioritas utama kami.</p>
+                </div>
+            </div>
+            
+            </p>
+        </div>
+    </div>
+    
+    <div id="contact" class="content-section">
+        <div class="contact-form">
+            <h2>💌 Kirim Pesan 💌</h2>
+            <form>
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email_kontak">Email</label>
+                <input type="email" id="email_kontak" name="email" required>
+
+                <label for="whatsapp">Nomor WhatsApp</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="Contoh: +628xxxxxxxxxx" required>
+
+                <label for="pesan">Tulis pesan atau pertanyaan kamu di sini...</label>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>✨ Hubungi Kami ✨</h2>
+            <div>
+                <h3>Email</h3>
+                <p>Hello@fairybeads.id</p>
+                <p>Kirim email untuk pertanyaan umum</p>
+            </div>
+            <div>
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/c/6285135597244" target="_blank">+62 851-3559-7244</a></p>
+                <p>Chat langsung dengan admin kami</p>
+            </div>
+            <div>
+                <h3>Ikuti Kami</h3>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/fairybeads_4?igsh=MXNrZ2JlZXdiZXluag==" target="_blank"><i class="fab fa-instagram"></i> @fairybeads_4</a><p></p></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart" class="content-section">
+        <h2 class="section-title">🛒 Keranjang Belanja Anda 🛒</h2>
+        <div id="cart-items-container">
+            </div>
+        
+        <div class="cart-summary" id="cart-summary">
+            <p>Subtotal: <span id="subtotal-price">Rp 0</span></p>
+            <p>Ongkos Kirim: <span id="shipping-price">Rp 0</span></p>
+            <p class="total">Total: <span id="total-price">Rp 0</span></p>
+            <button class="checkout-button" onclick="navigateTo('checkout')" id="checkout-btn" disabled>Lanjut ke Pembayaran</button>
+        </div>
+    </div>
+    
+    <div id="checkout" class="content-section hidden">
+        <h2 class="section-title">✨ Checkout Pembayaran ✨</h2>
+        <div class="checkout-container">
+            <div class="checkout-form">
+                <h3>Informasi Pengiriman</h3>
+                <form id="checkout-form-data">
+                    <label for="checkout-nama">Nama Lengkap</label>
+                    <input type="text" id="checkout-nama" required>
+
+                    <label for="checkout-email">Email</label>
+                    <input type="email" id="checkout-email" required>
+                    
+                    <label for="checkout-telp">Nomor Telepon</label>
+                    <input type="tel" id="checkout-telp" required>
+
+                    <label for="checkout-alamat">Alamat Lengkap (Jalan, No Rumah/Apartemen, RT/RW)</label>
+                    <textarea id="checkout-alamat" rows="3" required></textarea>
+
+                    <label for="checkout-kodepos">Kode Pos</label>
+                    <input type="text" id="checkout-kodepos" required>
+
+                    <label for="checkout-catatan">Catatan (Opsional: Ucapan Ulang Tahun, Bungkus Kado, dll.)</label>
+                    <textarea id="checkout-catatan" rows="2"></textarea>
+                    
+                    <h3>Pengiriman</h3>
+                    <label for="checkout-pengiriman">Pilih Metode Pengiriman</label>
+                    <select id="checkout-pengiriman" onchange="updateCheckoutSummary()" required>
+                        <option value="standard" data-cost="20000">Standard (Rp 20.000)</option>
+                        <option value="express" data-cost="35000">Express (Rp 35.000)</option>
+                    </select>
+                    
+                    <h3>Pembayaran</h3>
+                    <div class="payment-options">
+                        <label><input type="radio" name="payment-method" value="transfer" checked> Transfer Bank (BCA/Mandiri)</label>
+                        <label><input type="radio" name="payment-method" value="ewallet"> E-Wallet (Gopay/OVO)</label>
+                        <label><input type="radio" name="payment-method" value="cod"> COD (Bayar di Tempat)</label>
+                    </div>
+
+                    <button type="submit" class="checkout-button" style="width: 100%;">Konfirmasi Pesanan & Bayar</button>
+                </form>
+            </div>
+            
+            <div class="checkout-summary">
+                <h4>Ringkasan Pesanan</h4>
+                <div id="checkout-ringkasan-produk">
+                    </div>
+                <hr style="border-color: var(--color-soft-pink);">
+                <p>Subtotal: <span id="summary-subtotal-price">Rp 0</span></p>
+                <p>Pengiriman: <span id="summary-shipping-price">Rp 20.000</span></p>
+                <p class="total">Total Akhir: <span id="summary-total-price">Rp 0</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section logo-text" style="width: 100%; font-size: 1.5em; margin-bottom: 20px;">
+                Fairy Beads <span style="font-family: Arial, sans-serif;">✨</span>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#" onclick="navigateTo('home')">Home</a>
+                <a href="#" onclick="navigateTo('shop')">Shop</a>
+                <a href="#" onclick="navigateTo('about')">Tentang Kami</a>
+                <a href="#" onclick="navigateTo('contact')">Kontak</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Kategori</h4>
+                <a href="#" onclick="applyFilter('Necklace')">Necklace</a>
+                <a href="#" onclick="applyFilter('Bracelet')">Bracelet</a>
+                <a href="#" onclick="applyFilter('Phone Strap')">Phone Strap</a>
+                <a href="#" onclick="applyFilter('Ring')">Ring</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Ikuti Kami</h4>
+                <a href="https://www.instagram.com/fairybeads_4?igsh=MXNrZ2JlZXdiZXluag==" target="_blank"><i class="fab fa-instagram"></i> @fairybeads_4</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Dapatkan update promo terbaru!</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Email kamu...">
+                    <button>Kirim</button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 Fairy Beads Jewelry. Made with ❤️ in Indonesia.
+        </div>
+    </footer>
+            <div id="fairy-toast" class="fairy-toast hidden">
+            <div class="toast-icon">✨</div>
+            <div class="toast-message"></div>
+        </div>
+
+        <div id="order-confirmation-modal" class="confirmation-modal hidden">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeOrderConfirmation()">&times;</span>
+        <h2 class="section-title">Pesanan Terkonfirmasi! ✨</h2>
+        <div class="conf-header">
+            <p>Terima kasih telah berbelanja di Fairy Beads. Berikut ringkasan pesanan Anda:</p>
+            <p><strong>Nomor Pesanan: #FB<span id="order-number"></span></strong></p>
+        </div>
+
+        <div class="conf-section">
+            <h4>Detail Pengiriman</h4>
+            <div id="conf-shipping-details"></div>
+        </div>
+
+        <div class="conf-section">
+            <h4>Ringkasan Item</h4>
+            <div id="conf-item-summary"></div>
+        </div>
+        
+        <div class="conf-section conf-total-summary">
+            <h4>Total Pembayaran</h4>
+            <p>Subtotal: <span id="conf-subtotal"></span></p>
+            <p>Pengiriman (<span id="conf-shipping-method"></span>): <span id="conf-shipping-cost"></span></p>
+            <p class="total">Total Akhir: <span id="conf-final-total"></span></p>
+            <p>Metode Pembayaran: <strong id="conf-payment-method"></strong></p>
+        </div>
+
+        <p class="closing-note">Anda akan menerima email konfirmasi dalam waktu 5 menit. Silakan cek detail pembayaran. Happy Shopping!</p>
+    </div>
+</div>
+
+    <script>
+        // --- Data Produk ---
+        const products = [
+            // RING (ring1, ring2, ring3)
+            { id: 'R1', name: 'Celestial Pearl Ring', price: 35000, category: 'Ring', image: 'ring1.jpg', desc: 'Cincin manik-manik mutiara air tawar dengan aksen kristal berwarna cerah dan mutiara besar. Desain elegan dan cheerful.' },
+            { id: 'R2', name: 'Heart Dainty Ring Set', price: 30000, category: 'Ring', image: 'ring2.jpg', desc: 'Set cincin manik-manik mutiara air tawar dengan charm hati berhias berlian imitasi. Cocok untuk tampilan yang manis.' },
+            { id: 'R3', name: 'Gemstone Drop Ring', price: 32000, category: 'Ring', image: 'ring3.jpg', desc: 'Cincin manik-manik mutiara dengan charm batu permata (emerald green, fuschia pink). Minimalis dan berwarna.' },
+            
+            // BRACELETS (b1, b2, b3)
+            { id: 'B1', name: 'Fairy Charm Bracelet', price: 55000, category: 'Bracelet', image: 'b1.jpg', desc: 'Gelang rantai penuh charm bertema peri, dengan aksen pink quartz, pita, bintang, dan sayap malaikat. Super girly!' },
+            { id: 'B2', name: 'Pink Quartz Double Chain', price: 60000, category: 'Bracelet', image: 'b2.jpg', desc: 'Gelang double layer dengan beads kristal pink quartz dan charm pita mutiara. Tampilan mewah dan anggun.' },
+            { id: 'B3', name: 'Starry Dream Bracelet', price: 50000, category: 'Bracelet', image: 'b3.jpg', desc: 'Gelang manik-manik pastel (pink dan mint) dengan charm bintang dan hati. Kesan dreamy dan aesthetic.' },
+            
+            // NECKLACES (nc1, nc2, nc3)
+            { id: 'N1', name: 'Skull Sweetheart Choker', price: 45000, category: 'Necklace', image: 'nc1.jpg', desc: 'Kalung choker manik-manik mutiara dan pink kristal dengan charm tengkorak lucu. Perpaduan manis dan edgy.' },
+            { id: 'N2', name: 'Candy Crush Necklace', price: 50000, category: 'Necklace', image: 'nc2.jpg', desc: 'Kalung penuh manik-manik kristal, hati, dan bintang dalam nuansa fuschia dan pink cerah. Sangat pop dan fun.' },
+            { id: 'N3', name: 'Key to My Heart Choker', price: 48000, category: 'Necklace', image: 'nc3.jpg', desc: 'Choker manik-manik pastel pink dan mint dengan charm kunci hati. Desain lembut dan romantis.' },
+            
+            // PHONE STRAP (ps1, ps2, ps3)
+            { id: 'P1', name: 'Pearl Bow Phone Strap', price: 40000, category: 'Phone Strap', image: 'ps1.jpg', desc: 'Phone strap mutiara dengan pita-pita kecil pink. Cute, chic, dan fungsional.' },
+            { id: 'P2', name: 'Pink Dainty Phone Chain', price: 42000, category: 'Phone Strap', image: 'ps2.jpg', desc: 'Phone strap manik-manik pink dan mutiara double layer dengan charm pita besar. Tampilan mewah.' },
+            { id: 'P3', name: 'Crystal Heart Phone Charm', price: 45000, category: 'Phone Strap', image: 'ps3.jpg', desc: 'Phone strap manik-manik kristal dan pink dengan charm hati dan permata. Bling-bling dan gemas.' },
+        ];
+
+        let cart = []; // Array untuk menyimpan item di keranjang
+        let currentProduct = null; // Menyimpan produk yang sedang dilihat di detail
+
+        // Fungsi untuk Format Rupiah
+        const formatRupiah = (angka) => {
+            return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(angka);
+        };
+
+        // --- Navigasi Halaman ---
+        function navigateTo(pageId, productId = null) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.add('hidden');
+                section.classList.remove('active');
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-page') === pageId) {
+                    link.classList.add('active');
+                }
+            });
+            
+            const targetSection = document.getElementById(pageId);
+            if (targetSection) {
+                targetSection.classList.remove('hidden');
+                targetSection.classList.add('active');
+            }
+
+            // Aksi Khusus per Halaman
+            if (pageId === 'shop') {
+                renderProducts(); // Render ulang produk saat ke halaman shop
+            } else if (pageId === 'product-detail' && productId) {
+                renderProductDetail(productId);
+            } else if (pageId === 'cart') {
+                renderCart();
+            } else if (pageId === 'checkout') {
+                renderCheckout();
+            }
+
+            window.scrollTo(0, 0); // Gulir ke atas halaman
+        }
+
+        // --- Fungsi Product Grid (Shop Page) ---
+        function renderProducts(filteredProducts = products) {
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = ''; // Kosongkan grid
+
+            filteredProducts.forEach(product => {
+                const card = document.createElement('div');
+                card.classList.add('product-card');
+                card.innerHTML = `
+                    <img src="images/${product.image}" alt="${product.name}" onclick="navigateTo('product-detail', '${product.id}')">
+                    <div class="product-info">
+                        <h4 onclick="navigateTo('product-detail', '${product.id}')">${product.name}</h4>
+                        <p>${formatRupiah(product.price)}</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('${product.id}')">Tambah ke Keranjang</button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+            
+            if (filteredProducts.length === 0) {
+                grid.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: var(--color-text-light);">Tidak ada produk yang cocok dengan filter Anda. Coba filter lain.</p>';
+            }
+        }
+        
+        // --- Fungsi Filter ---
+        document.getElementById('price-range').addEventListener('input', function() {
+            document.getElementById('price-value').textContent = formatRupiah(this.value).replace('Rp', '').trim();
+        });
+
+        function applyFilter(category) {
+            // Uncheck semua filter
+            document.querySelectorAll('.category-filter input[type="checkbox"]').forEach(cb => cb.checked = false);
+            // Check filter yang dipilih (kecuali 'semua')
+            if (category !== 'all') {
+                 document.querySelector(`.category-filter input[data-filter="${category}"]`).checked = true;
+            } else {
+                 document.querySelector(`.category-filter input[data-filter="all"]`).checked = true;
+            }
+            
+            navigateTo('shop'); // Pindah ke halaman shop dan terapkan filter
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const selectedCategories = Array.from(document.querySelectorAll('.category-filter input:checked'))
+                                            .map(cb => cb.getAttribute('data-filter'))
+                                            .filter(filter => filter !== 'all');
+            const maxPrice = parseInt(document.getElementById('price-range').value);
+
+            let filtered = products.filter(product => {
+                const categoryMatch = selectedCategories.length === 0 || selectedCategories.includes(product.category);
+                const priceMatch = product.price <= maxPrice;
+                return categoryMatch && priceMatch;
+            });
+
+            renderProducts(filtered);
+        }
+
+        // --- Fungsi Detail Produk ---
+        function renderProductDetail(productId) {
+            currentProduct = products.find(p => p.id === productId);
+            const detailContainer = document.getElementById('product-detail');
+            
+            if (!currentProduct) {
+                detailContainer.innerHTML = '<p>Produk tidak ditemukan.</p>';
+                return;
+            }
+
+            detailContainer.innerHTML = `
+                <div class="detail-image-gallery">
+                    <img src="images/${currentProduct.image}" alt="${currentProduct.name}" class="main-image">
+                    </div>
+                <div class="product-details">
+                    <h2>${currentProduct.name}</h2>
+                    <p class="price">${formatRupiah(currentProduct.price)}</p>
+                    <p>${currentProduct.desc}</p>
+                    
+                    <div class="options">
+                        <div>
+                            <label for="color-select">Pilihan Warna/Varian:</label>
+                            <select id="color-select">
+                                <option value="pink">Pink Soft</option>
+                                <option value="mint">Mint Pastel</option>
+                                <option value="mix">Mix Color</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="quantity-input">Jumlah:</label>
+                            <input type="number" id="quantity-input" value="1" min="1" max="10">
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="cta-button" onclick="addToCart('${currentProduct.id}', document.getElementById('quantity-input').value)">Beli Sekarang</button>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+
+                    <div class="review-section">
+                        <h3>Ulasan Pengguna (3)</h3>
+                        <p style="font-size: 0.9em; margin-bottom: 5px;">"Cantik banget, sesuai foto! Love!" - Sarah W.</p>
+                        <p style="font-size: 0.9em; margin-bottom: 5px;">"Pengiriman cepat. Kualitas manik-manik oke." - Rina A.</p>
+                        <p style="font-size: 0.9em; margin-bottom: 5px;">"Lucu! Pas banget di jari." - Billa S.</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // --- Fungsi Custom Toast Notifikasi ---
+        function showFairyToast(message) {
+            const toast = document.getElementById('fairy-toast');
+            const toastMessage = toast.querySelector('.toast-message');
+            
+            // 1. Set pesan dan tampilkan
+            toastMessage.textContent = message;
+            toast.classList.remove('hidden');
+            
+            // Paksa reflow agar transisi berjalan
+            void toast.offsetWidth; 
+            
+            // 2. Terapkan kelas 'show' untuk transisi masuk
+            toast.classList.add('show');
+
+            // 3. Sembunyikan setelah 3 detik
+            setTimeout(() => {
+                toast.classList.remove('show');
+                
+                // Sembunyikan setelah transisi selesai (0.4s)
+                setTimeout(() => {
+                    toast.classList.add('hidden');
+                }, 400); 
+                
+            }, 3000); 
+        }
+
+        // --- Fungsi Konfirmasi Pesanan (Struk) ---
+        function showOrderConfirmation() {
+            const modal = document.getElementById('order-confirmation-modal');
+            const orderNumber = Math.floor(Math.random() * 90000) + 10000; // Generate No. Pesanan
+
+            // Ambil Data Checkout
+            const shippingSelect = document.getElementById('checkout-pengiriman');
+            const selectedShippingOption = shippingSelect.options[shippingSelect.selectedIndex];
+            const shippingMethodText = selectedShippingOption.textContent.match(/(.*) \(Rp/)[1];
+            const shippingCost = parseInt(selectedShippingOption.getAttribute('data-cost'));
+            
+            const paymentMethodElement = document.querySelector('input[name="payment-method"]:checked');
+            const paymentMethodText = paymentMethodElement ? paymentMethodElement.nextSibling.textContent.trim() : 'Transfer Bank';
+
+            const { subtotal } = calculateCartTotals();
+            const finalTotal = subtotal + shippingCost;
+            
+            // 1. Isi Detail Pengiriman
+            const shippingDetails = document.getElementById('conf-shipping-details');
+            shippingDetails.innerHTML = `
+                <p><strong>Nama:</strong> ${document.getElementById('checkout-nama').value}</p>
+                <p><strong>Alamat:</strong> ${document.getElementById('checkout-alamat').value}, ${document.getElementById('checkout-kodepos').value}</p>
+                <p><strong>Telp:</strong> ${document.getElementById('checkout-telp').value}</p>
+                ${document.getElementById('checkout-catatan').value ? `<p><strong>Catatan:</strong> ${document.getElementById('checkout-catatan').value}</p>` : ''}
+            `;
+
+            // 2. Isi Ringkasan Item
+            const itemSummary = document.getElementById('conf-item-summary');
+            itemSummary.innerHTML = '';
+            cart.forEach(item => {
+                itemSummary.innerHTML += `
+                    <p style="margin: 5px 0; font-size: 0.9em;">
+                        ${item.name} (${item.quantity}x) - 
+                        <span style="float: right; font-weight: 600;">${formatRupiah(item.price * item.quantity)}</span>
+                    </p>
+                `;
+            });
+
+            // 3. Isi Total
+            document.getElementById('order-number').textContent = orderNumber;
+            document.getElementById('conf-subtotal').textContent = formatRupiah(subtotal);
+            document.getElementById('conf-shipping-method').textContent = shippingMethodText;
+            document.getElementById('conf-shipping-cost').textContent = formatRupiah(shippingCost);
+            document.getElementById('conf-final-total').textContent = formatRupiah(finalTotal);
+            document.getElementById('conf-payment-method').textContent = paymentMethodText;
+
+            // 4. Tampilkan Modal
+            modal.classList.add('show');
+            modal.classList.remove('hidden');
+            
+            // Gulir ke atas untuk melihat modal
+            window.scrollTo(0, 0);
+
+            // Kosongkan keranjang dan update hitungan
+            cart = []; 
+            updateCartCount();
+        }
+
+        function closeOrderConfirmation() {
+            document.getElementById('order-confirmation-modal').classList.remove('show');
+            document.getElementById('order-confirmation-modal').classList.add('hidden');
+            navigateTo('home'); // Kembali ke home setelah menutup struk
+        }
+
+        // --- Fungsi Keranjang Belanja (Cart Logic) ---
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+            const checkoutBtn = document.getElementById('checkout-btn');
+            if (checkoutBtn) {
+                checkoutBtn.disabled = cart.length === 0;
+            }
+        }
+
+        function addToCart(productId, quantity = 1) {
+            quantity = parseInt(quantity);
+            const existingItem = cart.find(item => item.id === productId);
+            const product = products.find(p => p.id === productId);
+
+            if (!product) return;
+
+            if (existingItem) {
+                existingItem.quantity += quantity;
+            } else {
+                cart.push({
+                    ...product,
+                    quantity: quantity
+                });
+            }
+
+            updateCartCount();
+            showFairyToast(`Yeay! ${product.name} (${quantity} pcs) sudah masuk keranjangmu. 💖`);
+
+            // Jika dipanggil dari detail, pindah ke cart
+            if (document.getElementById('product-detail').classList.contains('active')) {
+                navigateTo('cart');
+            }
+        }
+
+        function removeFromCart(productId) {
+            cart = cart.filter(item => item.id !== productId);
+            updateCartCount();
+            renderCart();
+        }
+
+        function updateQuantity(productId, inputElement) {
+            const quantity = parseInt(inputElement.value);
+            const item = cart.find(item => item.id === productId);
+            if (item && quantity > 0) {
+                item.quantity = quantity;
+                renderCartSummary(); // Hanya update ringkasan
+            } else if (quantity <= 0) {
+                removeFromCart(productId);
+            }
+        }
+        
+        function calculateCartTotals() {
+            const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+            const shippingCost = 0; // Diatur di halaman checkout
+            const total = subtotal + shippingCost;
+            return { subtotal, shippingCost, total };
+        }
+        
+        function renderCartSummary() {
+            const { subtotal } = calculateCartTotals();
+            const shippingCost = 20000; // Default untuk Cart Page
+            const total = subtotal + shippingCost;
+            
+            document.getElementById('subtotal-price').textContent = formatRupiah(subtotal);
+            document.getElementById('shipping-price').textContent = cart.length > 0 ? formatRupiah(shippingCost) : formatRupiah(0);
+            document.getElementById('total-price').textContent = formatRupiah(total);
+        }
+
+        function renderCart() {
+            const container = document.getElementById('cart-items-container');
+            container.innerHTML = '';
+            
+            if (cart.length === 0) {
+                container.innerHTML = '<p style="text-align: center; color: var(--color-text-light);">Keranjang belanja Anda kosong. Yuk, cari perhiasan favoritmu!</p>';
+            } else {
+                cart.forEach(item => {
+                    const itemElement = document.createElement('div');
+                    itemElement.classList.add('cart-item');
+                    itemElement.innerHTML = `
+                        <img src="images/${item.image}" alt="${item.name}">
+                        <div class="item-details">
+                            <h4>${item.name}</h4>
+                            <p>Kategori: ${item.category}</p>
+                        </div>
+                        <div class="item-quantity">
+                            <input type="number" value="${item.quantity}" min="1" onchange="updateQuantity('${item.id}', this)">
+                        </div>
+                        <div class="item-price">${formatRupiah(item.price * item.quantity)}</div>
+                        <button class="remove-btn" onclick="removeFromCart('${item.id}')"><i class="fas fa-trash-alt"></i></button>
+                    `;
+                    container.appendChild(itemElement);
+                });
+            }
+            renderCartSummary();
+        }
+
+        // --- Fungsi Checkout ---
+        function updateCheckoutSummary() {
+            const { subtotal } = calculateCartTotals();
+            const shippingSelect = document.getElementById('checkout-pengiriman');
+            const selectedOption = shippingSelect.options[shippingSelect.selectedIndex];
+            const shippingCost = parseInt(selectedOption.getAttribute('data-cost'));
+            const total = subtotal + shippingCost;
+            
+            document.getElementById('summary-subtotal-price').textContent = formatRupiah(subtotal);
+            document.getElementById('summary-shipping-price').textContent = formatRupiah(shippingCost);
+            document.getElementById('summary-total-price').textContent = formatRupiah(total);
+        
+            // Ringkasan Produk
+            const ringkasanProduk = document.getElementById('checkout-ringkasan-produk');
+            ringkasanProduk.innerHTML = '';
+            cart.forEach(item => {
+                const itemDiv = document.createElement('p');
+                itemDiv.style.fontSize = '0.9em';
+                itemDiv.style.marginBottom = '5px';
+                itemDiv.innerHTML = `${item.name} (${item.quantity}x) - <b>${formatRupiah(item.price * item.quantity)}</b>`;
+                ringkasanProduk.appendChild(itemDiv);
+            });
+        }
+
+        function renderCheckout() {
+             if (cart.length === 0) {
+                alert("Keranjang kosong, tidak bisa lanjut checkout!");
+                navigateTo('shop');
+                return;
+            }
+            // Set default shipping cost pada select
+            document.getElementById('checkout-pengiriman').value = 'standard';
+            updateCheckoutSummary();
+        }
+        
+        // --- Form Submission (Simulasi) ---
+            document.getElementById('checkout-form-data').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // PENGGANTIAN: Panggil fungsi untuk menampilkan struk
+                showOrderConfirmation();
+            });
+
+
+        // --- Inisialisasi ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mapping gambar produk ke file lokal (di folder 'images/')
+            // Di VSCode, Anda perlu membuat folder 'images' dan menyimpan file produk di dalamnya.
+            // Contoh path: images/ring1.jpg, images/b1.jpg, dst.
+            // Untuk placeholder: images/placeholder_model_jewelry.jpg, images/placeholder_team1.jpg, dst.
+            
+            // Render produk saat halaman dimuat
+            renderProducts(); 
+            updateCartCount();
+
+            // Tambahkan listener untuk navigasi
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    navigateTo(e.target.getAttribute('data-page'));
+                });
+            });
+
+            // Set halaman default
+            navigateTo('home');
+        });
+    </script>
+
+</body>
+</html>
