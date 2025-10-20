@@ -374,6 +374,45 @@
             margin-bottom: 15px;
         }
 
+        /* Modifikasi CSS untuk tampilan ikon keranjang */
+
+/* Pastikan elemen ini menjadi wadah relatif untuk penempatan badge */
+        .nav-icons .cart-icon { 
+            position: relative; /* Ini sangat penting */
+            margin-left: 20px;
+            cursor: pointer;
+            color: var(--color-text-dark);
+            transition: color 0.3s;
+            /* Tambahkan display: block atau inline-block jika perlu, tapi biasanya span sudah inline */
+            display: inline-block; 
+        }
+        
+        /* Aturan untuk hitungan keranjang (badge) */
+        #cart-count {
+            /* Penempatan Mutlak (Absolute Positioning) */
+            position: absolute;
+            top: -10px; /* Sesuaikan untuk memposisikannya di atas/kanan ikon */
+            right: -10px; 
+            
+            /* Desain Lingkaran */
+            background-color: var(--color-soft-pink); /* Warna pink soft */
+            color: var(--color-text-dark); /* Warna teks di dalam lingkaran */
+            border: 2px solid var(--color-white); /* Border putih tipis jika perlu */
+            border-radius: 50%; /* Membuat bentuk lingkaran */
+            
+            /* Ukuran dan Teks */
+            width: 25px; /* Sesuaikan ukuran lingkaran */
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8em; /* Ukuran font untuk angka */
+            font-weight: 700;
+            
+            /* Z-Index agar selalu di atas ikon lain */
+            z-index: 10;
+        }
+
         .add-to-cart-btn {
             background-color: var(--color-soft-pink);
             color: var(--color-text-dark);
@@ -1136,7 +1175,10 @@
         </nav>
         <div class="nav-icons">
             <span class="search-icon" style="display: none;"><i class="fas fa-search"></i></span>
-            <span class="cart-icon" onclick="navigateTo('cart')"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</span>
+            <span class="cart-icon" onclick="navigateTo('cart')">
+            <i class="fas fa-shopping-cart"></i> 
+            <span id="cart-count">0</span>
+        </span>
         </div>
     </header>
 
@@ -1854,4 +1896,5 @@
     </script>
 
 </body>
+
 </html>
